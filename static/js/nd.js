@@ -16,7 +16,7 @@ function convertRange(v, inMin, inMax, outMin, outMax) {
 
 
 function addPhoto(photo) {
-    var photoSize = 25;
+    var photoSize = 8;
     var top = convertRange(photo.latitude, 90, -90, 0, 600) - photoSize / 2;
     var left = convertRange(photo.longitude, -180, 180, 0, 1000) - photoSize / 2;
     var imgEl = document.createElement('img');
