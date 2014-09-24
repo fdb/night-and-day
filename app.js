@@ -18,6 +18,7 @@ if (!FLICKR_API_KEY) {
 }
 
 var FLICKR_END_POINT = 'https://api.flickr.com/services/rest/';
+var FLICK_REFRESH_RATE_SECONDS = 30;
 
 var flickr = {};
 
@@ -129,7 +130,7 @@ function fetchRecentPhotos() {
     });
 }
 
-setInterval(fetchRecentPhotos, 30 * 1000);
+setInterval(fetchRecentPhotos, FLICK_REFRESH_RATE_SECONDS * 1000);
 
 var CONTENT_TYPES = {
     '.html': 'text/html',
