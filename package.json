@@ -1,0 +1,17 @@
+{
+  "name": "night-and-day",
+  "version": "0.1.0",
+  "description": "Visualisation of day-night cycle using Flickr photos",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Frederik De Bleser",
+  "license": "MIT",
+  "dependencies": {
+    "nedb": "^0.11.1",
+    "request": "^2.44.0",
+    "socket.io": "^1.1.0",
+    "underscore": "^1.7.0"
+  }
+}

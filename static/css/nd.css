@@ -1,0 +1,13 @@
+body {
+    background: #1E1A2B;
+}
+
+.photos {
+    width: 1000px;
+    height: 600px;
+    border: 1px solid #373553;
+    margin: 20px auto;
+    position: relative;
+    top: 0;
+    left: 0;
+}
