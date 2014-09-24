@@ -6,7 +6,7 @@ Installation
 ------------
 This project uses the Flickr API. A key is required. [Request one here](https://secure.flickr.com/services/api/keys/apply/).
 
-This project uses node.js. To setup on Mac using Homebrew:
+This project is a client-server application, with the server written in [node.js](http://nodejs.org/). To setup on Mac using Homebrew:
 
     brew install node
 
@@ -20,3 +20,13 @@ Running:
 
     export FLICKR_API_KEY="YOUR_API_KEY_HERE"
     node app.js
+        
+Colophon
+--------
+* [Flickr API](https://secure.flickr.com/services/api/): where the data comes from
+* [node.js](http://nodejs.org/): web server and fetch process
+* [request](https://github.com/mikeal/request): HTTP client for node.js
+* [socket.io](http://socket.io/): real-time server-to-browser communications
+* [NeDB](https://github.com/louischatriot/nedb): light-weight embedded database
+* [JSHint](http://www.jshint.com/docs/): bringing sanity to JavaScript
+* [Underscore](http://underscorejs.org/): essential JavaScript helpers
