@@ -9,6 +9,7 @@ var fs = require('fs');
 var http = require('http');
 var path = require('path');
 
+var io;
 
 var FLICKR_API_KEY = process.env.FLICKR_API_KEY;
 if (!FLICKR_API_KEY) {
@@ -45,7 +46,7 @@ function lonLatToFloat(s) {
 flickr.getRecent = function (callback) {
     var args = {
         method: 'flickr.photos.getRecent',
-        api_key: FLICKR_API_KEY,
+        'api_key': FLICKR_API_KEY,
         format: 'json',
         nojsoncallback: '1'
     };
@@ -55,8 +56,8 @@ flickr.getRecent = function (callback) {
 flickr.getExif = function (photoId, callback) {
     var args = {
         method: 'flickr.photos.getExif',
-        api_key: FLICKR_API_KEY,
-        photo_id: photoId,
+        'api_key': FLICKR_API_KEY,
+        'photo_id': photoId,
         format: 'json',
         nojsoncallback: '1'
     };
@@ -156,7 +157,7 @@ var server = http.createServer(function (req, res) {
     });
 });
 
-var io = socketIo(server);
+io = socketIo(server);
 
 io.on('connection', function (socket) {
     console.log('a user connected');

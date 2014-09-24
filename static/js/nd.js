@@ -1,3 +1,7 @@
+/* globals io */
+
+'use strict';
+
 function convertRange(v, inMin, inMax, outMin, outMax) {
     var inDelta;
     inDelta = inMax - inMin;
